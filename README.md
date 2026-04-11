@@ -1,4 +1,4 @@
-# LegalLens — Phase 1: RAG Foundation
+# LegalLens — RAG Foundation
 
 Contract intelligence platform. Upload a PDF contract → get semantic Q&A, clause extraction, and risk analysis powered by a hybrid RAG pipeline.
 
@@ -124,10 +124,3 @@ After generating an answer, a second LLM call checks: "Is this answer supported 
 
 ---
 
-## What's next — Phase 2
-
-- Clause extraction + risk scoring (indemnity, termination, liability cap, penalty clauses)
-- Celery + Redis job queue for proper async ingestion
-- Real-time WebSocket job status updates
-- Cross-encoder re-ranking (ms-marco-MiniLM) for top-5 selection
-- Per-user auth with JWT + document isolation
