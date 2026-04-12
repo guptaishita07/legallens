@@ -1,18 +1,17 @@
 # LegalLens — RAG Foundation
 
-Contract intelligence platform. Upload a PDF contract → get semantic Q&A, clause extraction, and risk analysis powered by a hybrid RAG pipeline.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## Quick start
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-### 1. Start the database
+## React Compiler
 
-```bash
-docker compose up db redis -d
-```
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-This starts PostgreSQL 16 with the pgvector extension and Redis.
+## Expanding the ESLint configuration
 
 ### 2. Backend
 
