@@ -24,7 +24,11 @@ python-jose[cryptography]==3.3.0
 rank-bm25==0.2.2
 numpy==1.26.4
 
-# Phase 2+ (install later)
-# celery==5.4.0
-# redis==5.0.8
-# reportlab==4.2.2
+# Phase 2
+celery==5.4.0
+redis==5.0.8
+reportlab==4.2.2
+
+# Phase 3
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4

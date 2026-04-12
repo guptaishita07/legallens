@@ -31,6 +31,14 @@ class Settings(BaseSettings):
     RETRIEVAL_TOP_K: int = 20             # candidates fetched from vector DB
     RERANK_TOP_N: int = 5                 # chunks passed to LLM after reranking
 
+    # Redis / Celery (Phase 2)
+    REDIS_URL: str = "redis://localhost:6379/0"
+
+    # Risk scoring thresholds
+    RISK_THRESHOLD_GHOST: int = 80     # repurposed: HIGH risk
+    RISK_THRESHOLD_SUSPICIOUS: int = 60
+    RISK_THRESHOLD_WATCH: int = 30
+
     # App
     APP_ENV: str = "development"
     SECRET_KEY: str = "dev-secret-change-me"
